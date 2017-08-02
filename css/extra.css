@@ -1,0 +1,14 @@
+.img-front-page {
+    display: table;
+    width: 100%;
+}
+
+.img-front-page-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.img-center-horizontally {
+    display: block;
+    margin: 0 auto;
+}

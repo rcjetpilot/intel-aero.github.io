@@ -1,0 +1,1502 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://intel-aero.github.io/getting-started/update/">
+      
+      
+      
+        <link rel="shortcut icon" href="../../favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.5">
+    
+    
+      
+        <title>Update - Intel Aero</title>
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <!--
+  Copyright (c) 2016-2017 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Application header -->
+<header class="md-header" data-md-component="header">
+
+  <!-- Top-level navigation -->
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+
+      <!-- Link to home -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href="https://intel-aero.github.io"
+              title="Intel Aero"
+              class="md-logo md-header-nav__button">
+            <img src="../../img/logo.png"
+                height="24" />
+          </a>
+        
+      </div>
+
+      <!-- Button to toggle drawer -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button"
+            for="drawer"></label>
+      </div>
+
+      <!-- Header title -->
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Getting Started
+                </span>
+              
+            
+            Update
+          
+        </span>
+      </div>
+
+      <!-- Button to open search dialogue -->
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button"
+              for="search"></label>
+
+          <!-- Search interface -->
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+
+      <!-- Repository containing source -->
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="Getting Started" class="md-tabs__link md-tabs__link--active">
+          Getting Started
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../dev/dev/" title="Development" class="md-tabs__link">
+          Development
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../hw/info/" title="Hardware" class="md-tabs__link">
+          Hardware
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../sw/info/" title="Software" class="md-tabs__link">
+          Software
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../contributions/documentation/" title="Contributing" class="md-tabs__link">
+          Contributing
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../troubleshooting/" title="Troubleshooting" class="md-tabs__link">
+          Troubleshooting
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-logo md-nav__button">
+        <img src="../../img/logo.png">
+      </i>
+    
+    Intel Aero
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Welcome" class="md-nav__link">
+      Welcome
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../power-on/" title="Power On" class="md-nav__link">
+      Power On
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Update
+      </label>
+    
+    <a href="./" title="Update" class="md-nav__link md-nav__link--active">
+      Update
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#check-current-version" title="Check current version" class="md-nav__link">
+    Check current version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download" title="Download" class="md-nav__link">
+    Download
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-md5sum" title="Check md5sum" class="md-nav__link">
+    Check md5sum
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux-and-macos" title="Linux and macOS" class="md-nav__link">
+    Linux and macOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-os-image-to-usb-drive" title="Write OS image to USB drive" class="md-nav__link">
+    Write OS image to USB drive
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux-windows-and-macos" title="Linux, Windows and macOS" class="md-nav__link">
+    Linux, Windows and macOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-and-macos-alternative" title="Linux and macOS (alternative)" class="md-nav__link">
+    Linux and macOS (alternative)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-alternative" title="Windows (alternative)" class="md-nav__link">
+    Windows (alternative)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flash-os-image" title="Flash OS image" class="md-nav__link">
+    Flash OS image
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v12-or-greater-via-wifi" title="v1.2 (or greater) via WiFi" class="md-nav__link">
+    v1.2 (or greater) via WiFi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v12-or-greater-via-usb" title="v1.2 (or greater) via USB" class="md-nav__link">
+    v1.2 (or greater) via USB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#before-v12" title="Before v1.2" class="md-nav__link">
+    Before v1.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-progress" title="Status progress" class="md-nav__link">
+    Status progress
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bios" title="BIOS" class="md-nav__link">
+    BIOS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fpga" title="FPGA" class="md-nav__link">
+    FPGA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flight-controller" title="Flight Controller" class="md-nav__link">
+    Flight Controller
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../flying/" title="Flying" class="md-nav__link">
+      Flying
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../camera/" title="Camera" class="md-nav__link">
+      Camera
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Development
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Development
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/dev/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/flight-stacks/" title="Flight Stacks" class="md-nav__link">
+      Flight Stacks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Container
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        Container
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/container/container/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/container/setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/container/workflow/" title="Workflow" class="md-nav__link">
+      Workflow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/container/deploy/" title="Deploy" class="md-nav__link">
+      Deploy
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Companion Applications
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        Companion Applications
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/app/app/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/app/pymavlink/" title="Pymavlink" class="md-nav__link">
+      Pymavlink
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/app/mavlink/" title="Mavlink" class="md-nav__link">
+      Mavlink
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/app/dronekit/" title="Dronekit" class="md-nav__link">
+      Dronekit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/app/ros/" title="ROS" class="md-nav__link">
+      ROS
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/camera/" title="Camera" class="md-nav__link">
+      Camera
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
+      Yocto Project
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        Yocto Project
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/yocto/yocto/" title="Intro" class="md-nav__link">
+      Intro
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/yocto/add-preexistent-package/" title="Add a pre-existent package" class="md-nav__link">
+      Add a pre-existent package
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/yocto/package-own-application/" title="Package own application" class="md-nav__link">
+      Package own application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/yocto/work-with-kernel/" title="Work with Kernel" class="md-nav__link">
+      Work with Kernel
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dev/coav/" title="Collision Avoidance" class="md-nav__link">
+      Collision Avoidance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Hardware
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hw/info/" title="Info and Architecture" class="md-nav__link">
+      Info and Architecture
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../hw/mods/" title="Mods" class="md-nav__link">
+      Mods
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Software
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Software
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sw/info/" title="Info and Architecture" class="md-nav__link">
+      Info and Architecture
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Contributing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributions/documentation/" title="Documentation" class="md-nav__link">
+      Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributions/app/" title="Applications" class="md-nav__link">
+      Applications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributions/yocto/" title="Yocto Project" class="md-nav__link">
+      Yocto Project
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributions/container/" title="Container Images" class="md-nav__link">
+      Container Images
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Troubleshooting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../troubleshooting/" title="Troubleshooting" class="md-nav__link">
+      Troubleshooting
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#check-current-version" title="Check current version" class="md-nav__link">
+    Check current version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download" title="Download" class="md-nav__link">
+    Download
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-md5sum" title="Check md5sum" class="md-nav__link">
+    Check md5sum
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux-and-macos" title="Linux and macOS" class="md-nav__link">
+    Linux and macOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" title="Windows" class="md-nav__link">
+    Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#write-os-image-to-usb-drive" title="Write OS image to USB drive" class="md-nav__link">
+    Write OS image to USB drive
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux-windows-and-macos" title="Linux, Windows and macOS" class="md-nav__link">
+    Linux, Windows and macOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-and-macos-alternative" title="Linux and macOS (alternative)" class="md-nav__link">
+    Linux and macOS (alternative)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-alternative" title="Windows (alternative)" class="md-nav__link">
+    Windows (alternative)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flash-os-image" title="Flash OS image" class="md-nav__link">
+    Flash OS image
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#v12-or-greater-via-wifi" title="v1.2 (or greater) via WiFi" class="md-nav__link">
+    v1.2 (or greater) via WiFi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#v12-or-greater-via-usb" title="v1.2 (or greater) via USB" class="md-nav__link">
+    v1.2 (or greater) via USB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#before-v12" title="Before v1.2" class="md-nav__link">
+    Before v1.2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-progress" title="Status progress" class="md-nav__link">
+    Status progress
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bios" title="BIOS" class="md-nav__link">
+    BIOS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fpga" title="FPGA" class="md-nav__link">
+    FPGA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flight-controller" title="Flight Controller" class="md-nav__link">
+    Flight Controller
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="update-intel-aero-software">Update Intel Aero software<a class="headerlink" href="#update-intel-aero-software" title="Permanent link">&para;</a></h1>
+<p>The Intel Aero Compute Board and the RTF Kit comes already flashed from factory
+and ready to use. The version may vary and it's recommended for developers to
+update to the last available version.</p>
+<p>There are 4 main components that may need to be updated:
+Operating System, BIOS, FPGA, Flight Controller (aerofc).</p>
+<h2 id="check-current-version">Check current version<a class="headerlink" href="#check-current-version" title="Permanent link">&para;</a></h2>
+<p>In order to know what needs to be updated you may check what's already
+currently installed on your board. Connect to the board via WiFi or USB
+and use the following command on the terminal:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> aero-get-version.py
+<span class="go">BIOS_VERSION = Aero-01.00.12_Prod</span>
+<span class="go">OS_VERSION = v1.4</span>
+<span class="go">AIRMAP_VERSION = 1.8</span>
+<span class="go">FPGA_VERSION = 0xc0</span>
+</pre></div>
+
+
+<p>This should show the 3 important versions: OS, BIOS and FPGA. The flight
+controller currently doesn't report its version this way.</p>
+<h2 id="download">Download<a class="headerlink" href="#download" title="Permanent link">&para;</a></h2>
+<p>The last software version can be downloaded from
+<a href="https://downloadcenter.intel.com/download/26932/Intel-Aero-Platform-for-UAVs-Installation-Files">Intel's Download Center</a>.
+You will need to download the "Operating system image" and the "Capsule/BIOS"
+from that page.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The Operating system image is updated much more frequently than the BIOS.
+If you already have the last BIOS flashed you don't need to download and
+flash it again. See <a href="#check-current-version">Check current version</a> for instructions on how to check version
+currently installed.</p>
+</div>
+<p>As of this writting the OS Image is at version 1.4 and the BIOS at version
+1.00.12. After downloading it's advised to check if the download was successful
+by checking its md5sum. It must match the md5sum published on the Download Center.</p>
+<h2 id="check-md5sum">Check md5sum<a class="headerlink" href="#check-md5sum" title="Permanent link">&para;</a></h2>
+<h3 id="linux-and-macos">Linux and macOS<a class="headerlink" href="#linux-and-macos" title="Permanent link">&para;</a></h3>
+<p>Open a terminal and execute the following command below. The md5sum can be seen
+in the line following it.</p>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> md5sum ~/Downloads/intel-aero-image-1.4.iso
+<span class="go">9a1706addd08eb8bea3a4e6dbc58b724 /home/&lt;user&gt;/Downloads/intel-aero-image-1.4.iso</span>
+</pre></div>
+
+
+<p>The command above assumes the download has been done to your Downloads directory,
+which is usually the default location but may vary across distros.</p>
+<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
+<p>You will need to download and install <a href="https://sourceforge.net/projects/win32diskimager/">Win32 Disk Imager</a>.
+This software can also be used later below if you are following the Windows-specific
+instructions. See picture below that contains the "MD5 hash" for an earlier
+version of the OS image.</p>
+<p><img src="../img/win32_disk_imager_md5sum.png" class="img-center-horizontally" /></p>
+<h2 id="write-os-image-to-usb-drive">Write OS image to USB drive<a class="headerlink" href="#write-os-image-to-usb-drive" title="Permanent link">&para;</a></h2>
+<p>The method to write the image to the USB drive will depend on what Operating
+System you are using. Below you can find options that work on each of Linux,
+Windows and macOS.</p>
+<h3 id="linux-windows-and-macos">Linux, Windows and macOS<a class="headerlink" href="#linux-windows-and-macos" title="Permanent link">&para;</a></h3>
+<p>Follow these steps:</p>
+<ul>
+<li>Download and install <a href="https://etcher.io/">Etcher</a>. follow specific instructions
+  on their website for installation</li>
+<li>Launch Etcher</li>
+<li>Select the downloaded OS image file</li>
+<li>Select the USB drive where it will be written to</li>
+<li>Click on "Flash" button</li>
+</ul>
+<p>Wait for the image to be written and verified.</p>
+<h3 id="linux-and-macos-alternative">Linux and macOS <em>(alternative)</em><a class="headerlink" href="#linux-and-macos-alternative" title="Permanent link">&para;</a></h3>
+<p>It's possible to use the command line to write the image to a USB drive as
+below. Note that the letter <em>X</em> below should be replaced by the letter of
+your USB drive (be careful not to use the wrong drive since it can overwrite
+your main disk).</p>
+<div class="codehilite"><pre><span></span>dd <span class="k">if</span><span class="o">=</span>~/Downloads/intel-aero-image-1.4.iso <span class="nv">of</span><span class="o">=</span>/dev/sdX <span class="nv">bs</span><span class="o">=</span>1M
+</pre></div>
+
+
+<h3 id="windows-alternative">Windows <em>(alternative)</em><a class="headerlink" href="#windows-alternative" title="Permanent link">&para;</a></h3>
+<p>If you are using this method, you need to use Win32 Disk Imager
+as detailed in <a href="#windows">Check md5sum</a> section. After checking the
+download is correct proceed with the following steps:</p>
+<ul>
+<li>Select your USB drive</li>
+<li>Click on "Write" button</li>
+</ul>
+<h2 id="flash-os-image">Flash OS image<a class="headerlink" href="#flash-os-image" title="Permanent link">&para;</a></h2>
+<p>In order to flash a new OS image you can connect to it either via
+WiFi or USB. Since the USB port will be needed to connect the USB drive
+it's recommended to use WiFi though. Follow the instructions on <a href="#">XXXXX</a> to
+connect establish the network connection and connect via ssh. The commands
+below assume you are already connected to the Compute Board.</p>
+<p>Based on the version you <strong>currently</strong> have installed on the Compute Board the
+method varies since recent versions are always improving the process.</p>
+<h3 id="v12-or-greater-via-wifi">v1.2 (or greater) via WiFi<a class="headerlink" href="#v12-or-greater-via-wifi" title="Permanent link">&para;</a></h3>
+<p>Just one command is needed:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> aero-reboot-update.py
+</pre></div>
+
+
+<p>This will verify you have a new OS image on the USB drive and reboot in update
+mode.</p>
+<h3 id="v12-or-greater-via-usb">v1.2 (or greater) via USB<a class="headerlink" href="#v12-or-greater-via-usb" title="Permanent link">&para;</a></h3>
+<p>If you are connected via USB you have to bypass the check done by the command
+on the previous section since the USB is being used for usb-ethernet connection:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> aero-reboot-update.py -f
+</pre></div>
+
+
+<p>After seeing the message that the system is rebooting, rapidly connect the USB
+drive so the system can reboot into it.</p>
+<h3 id="before-v12">Before v1.2<a class="headerlink" href="#before-v12" title="Permanent link">&para;</a></h3>
+<p>Before version 1.2 the command <code>aero-reboot-update.py</code> used on the previous
+sections didn't exist. You will need to manually access the USB drive to
+execute that command directly from the new OS image.</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> mkdir -p /tmp/<span class="o">{</span>iso,newroot<span class="o">}</span>
+<span class="gp">#</span> mount -o ro /dev/sda1 /tmp/iso
+<span class="gp">#</span> mount -o loop,ro /tmp/iso/rootfs.img /tmp/newroot
+<span class="gp">#</span> /tmp/newroot/usr/sbin/aero-reboot-update.py
+</pre></div>
+
+
+<p>Just like on <a href="#v12-or-greater-via-usb">v1.2 (or greater) via USB</a> you should
+pass the <code>-f</code> flag to the last command if you are connected via USB.</p>
+<h3 id="status-progress">Status progress<a class="headerlink" href="#status-progress" title="Permanent link">&para;</a></h3>
+<p>The updated process gives feedback to the user in some forms:</p>
+<ol>
+<li>If you have an HDMI screen connected, you will see the progress of the
+   update as text on it</li>
+<li>
+<p>Internal RGB LED on Compute Board will blink according to the different
+   phases:</p>
+<ol>
+<li>When the board is turned on the LED is green</li>
+<li>Before rebooting the RGB LED will become yellow: this means the board
+   started the reboot progress. It takes around 20 seconds for this
+   command to take effect and thus change from yellow to green again.
+   If the BIOS version is older than 1.00.12, the reboot command may get
+   stuck. You can safely remove power and power it on again if that happens:
+   it will proceed with the update process</li>
+<li>When board is rebooted the RGB LED becomes green again</li>
+<li>During the update process the RGB LED will blink red once a second (1Hz).
+   The time taken by the update process may vary, but should take around 3
+   minutes.</li>
+<li>When the Compute Board is updated the RGB LED will blink fast at 10Hz for
+   5 seconds and reboot. After that the update process is done and you should
+   be greeted with the new version</li>
+</ol>
+</li>
+<li>
+<p>On the RTF kit there are additional blue LEDs next to the power button. They
+   will follow the same blink pattern as above with the exception that they don't
+   change color</p>
+</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>On the RTF kit it may be difficult to see the internal RGB LED. You can look
+to the hole through each the FAN cable is passing in order to
+check it's. See the image below for reference. You can also use your hand
+putting it near to the hole to reflect the light and monitor the progress.</p>
+<p><img alt="RGB LED on RTF kit" src="../img/rgb-led-rtf.png" /></p>
+</div>
+<h2 id="bios">BIOS<a class="headerlink" href="#bios" title="Permanent link">&para;</a></h2>
+<p>The BIOS update works by installing the downloaded package <code>rpm</code> package. This
+will install the update file that will be used on next boot to update it. You
+need to follow these steps:</p>
+<ol>
+<li>Copy the file to Aero Compute Board: you may use <code>scp</code> or <code>rsync</code>. Example:</li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="gp">$</span> scp ~/Downloads/capsule-01.00.12-r0.core2_64.rpm intel-aero.local:
+</pre></div>
+
+
+<ol>
+<li>Install and reboot</li>
+</ol>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> dnf install capsule-01.00.12-r0.core2_64.rpm
+<span class="gp">#</span> reboot
+</pre></div>
+
+
+<p>During the next boot the BIOS will detect the update and flash the new version.
+If you have HDMI output connected you can see the update progress. After
+logging in again, check the current version <a href="#check-current-version">as above</a>
+to make sure everything worked.</p>
+<h2 id="fpga">FPGA<a class="headerlink" href="#fpga" title="Permanent link">&para;</a></h2>
+<p>The OS image comes with the recommended versions of the FPGA firmware, but during
+the install process it doesn't flash it automatically since the user may choose
+what version to use depending on his needs and also can modify and have his own
+firmware: the <a href="https://github.com/intel-aero/intel-aero-fpga">FPGA source</a>
+is open source too. Check the available versions of the fpga under <code>/etc/fpga/</code>:</p>
+<ul>
+<li><code>aero-rtf.jam</code>: this is for use with RTF kit during normal operation</li>
+<li><code>aero-rtf-recovery.jam</code>: this is for use with the RTF kit under special
+  circunstances: it allows the Compute Board to instruct the Flight Controller
+  to stop on bootloader so we can flash new versions of the firmware even if
+  the previous version stopped responding due to a bad update</li>
+<li><code>aero-compute-board.jam</code>: this should be selected if using only the Compute
+  Board and not the Flight Controller. Note that the labels that accompany
+  the Compute Board have no meaning. Check the official documentation for
+  what each pin is connected to.</li>
+</ul>
+<p>You can flash the FPGA with the command below in which <code>&lt;firmware&gt;</code> is one of
+the firmwares above.</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> jam -aprogram /etc/fpga/&lt;firmware&gt;.jam
+</pre></div>
+
+
+<h2 id="flight-controller">Flight Controller<a class="headerlink" href="#flight-controller" title="Permanent link">&para;</a></h2>
+<p>This only applies to the RTF kit since the Compute Board doesn't come with
+the flight controller which is called <strong>aerofc</strong>. The RTF kit comes
+pre-flashed and calibrated with PX4, but it's recommended to update to the
+same version that comes in the OS image to get the latest improvements.</p>
+<p>The current version of OS image comes with both PX4 and ArduPilot firmwares
+and the user can choose which one he prefers. They are located in <code>/etc/aerofc/</code>.
+Commands below illustrate how to flash each of them:</p>
+<p>PX4:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> aerofc-update.sh /etc/aerofc/px4/nuttx-aerofc-v1-default.px4
+</pre></div>
+
+
+<p>ArduPilot:</p>
+<div class="codehilite"><pre><span></span><span class="gp">#</span> aerofc-update.sh /etc/aerofc/ardupilot/arducopter-aerofc-v1.px4
+</pre></div>
+
+
+<p>After this command the flight controller (not the Compute Board) is
+automatically rebooted with the new firmware.</p>
+<p>Flight stack developers may want to flash the current version being developed
+rather than the stable version that comes with the OS image. For that it's
+recommended to follow the steps from each of them: <a href="https://dev.px4.io/en/flight_controller/intel_aero.html">PX4</a>
+and <a href="http://ardupilot.org/copter/docs/common-intel-aero-rtf.html">ArduPilot</a>.</p>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../power-on/" title="Power On" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Power On
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../flying/" title="Flying" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Flying
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application-07b0fbb49b.js"></script>
+      
+      
+      <script>app.initialize({url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
